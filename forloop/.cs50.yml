@@ -2,3 +2,11 @@ lab50:
   files:
     - !exclude "*"
     - !include forloop.c
+
+check50: 
+  files: &check50_files
+    - !require forloop.c
+
+submit50: 
+  files: *check50_files
+  style: false
