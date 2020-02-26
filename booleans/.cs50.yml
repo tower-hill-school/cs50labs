@@ -2,3 +2,11 @@ lab50:
   files:
     - !exclude "*"
     - !include booleans.c
+
+check50: 
+  files: &check50_files
+    - !require booleans.c
+
+submit50: 
+  files: *check50_files
+  style: false
